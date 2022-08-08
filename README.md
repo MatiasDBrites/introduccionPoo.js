@@ -54,7 +54,9 @@ function multiplicarNumeroDesconocidoPorCinco (objetoMisterioso) {
   // Tu código:
   
   let result = objetoMisterioso.numeroMisterioso * 5;
+  
   return result;
+
 }
 
 function eliminarPropiedad (objeto, unaPropiedad) {
@@ -65,7 +67,9 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // Tu código:
   
   delete objeto[unaPropiedad];
+  
   return objeto;
+
 }
 
 function nuevoUsuario (nombre, email, password) {
@@ -90,9 +94,11 @@ function tieneEmail (usuario) {
   // Tu código:
   
   if(usuario["email"]) {  
-    return true;
+   return true;
+  
   } else {
     return false;
+  
   }
 }
 
@@ -105,9 +111,12 @@ function tienePropiedad (objeto, propiedad) {
   
   if(objeto[propiedad]) {
     return true;
+  
   } else {
       return false;
+ 
  }
+
 }
 
 function verificarPassword (usuario, password) {
@@ -118,6 +127,7 @@ function verificarPassword (usuario, password) {
   // Tu código:
  
  return usuario["password"] === password;
+
 }
 
 function actualizarPassword (usuario, nuevaPassword) {
@@ -127,7 +137,9 @@ function actualizarPassword (usuario, nuevaPassword) {
   // Tu código:
  
  usuario.password = nuevaPassword;
-  return usuario;
+
+ return usuario;
+
 }
 
 function agregarAmigo (usuario, nuevoAmigo) {
@@ -138,7 +150,9 @@ function agregarAmigo (usuario, nuevoAmigo) {
   // Tu código:
   
   usuario.amigos.push(nuevoAmigo);
+
   return usuario;
+
 }
 
 function pasarUsuarioAPremium (usuarios) {
@@ -151,8 +165,11 @@ function pasarUsuarioAPremium (usuarios) {
   
   for(var i = 0; i < usuarios.length; i++) {
     usuarios[i].esPremium = true;
+
   }
+  
   return usuarios;
+
 }
 
 function sumarLikesDeUsuario(usuario) {
@@ -164,10 +181,13 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
   
+  
   let likes = 0;
+  
   for (let i = 0; i < usuario.post.length; i++) {
     likes = likes + usuario.post[i].likes;
   }
+  
   return likes;
 }
 
@@ -184,8 +204,12 @@ function agregarMetodoCalculoDescuento (producto) {
   // Tu código:
   
   producto.calcularPrecioDescuento = function () {
+  
     return this.precio - (this.precio * this.porcentajeDeDescuento);
+  
   }
+  
   return producto;
+
 }
 
